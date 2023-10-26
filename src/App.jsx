@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Axios from "axios";
+import AuthBar from "./SingIn.jsx";
+import SingUp from "./SingUp.jsx";
+import "./App.css";
 
 const App = () => {
   const [data, setData] = useState("");
@@ -15,7 +18,9 @@ const App = () => {
   },[]);
 
   return (
-      <div>{data}</div>
+    <div>
+      {<AuthBar />}
+    </div>
   )
 }
 
